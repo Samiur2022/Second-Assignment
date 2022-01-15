@@ -1,0 +1,35 @@
+/*===================== google-fonts ============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+/* =================== root ================== */
+:root{
+    /* h1 title */
+    --main-title:'Roboto', sans-serif;
+    --h1-col:#3949ab;
+    --head-text: capitalize;
+    /* h2 title and p */
+    --sec-title:'Poppins', sans-serif;
+    --para-text: capitalize;
+    --h2-col:#6f74dd;
+    /* button-color */
+    --btn-col:#00227b;
+    /* nav */
+    --nav-text: capitalize;
+    --margin-right: 20px;
+    
+}
+/* ===================== base ==================== */
+
+/* ===================== nav-style ================== */
+nav>ul .nav-right{
+    display: flex;
+    justify-content:right;
+    text-transform: var(--nav-text);
+}
+nav ul li{
+    list-style: none;
+    margin-right: var(--margin-right);
+}
+nav>ul>li a{
+    text-decoration: none;
+}
