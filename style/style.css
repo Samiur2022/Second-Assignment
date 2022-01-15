@@ -34,7 +34,10 @@
     --margin-right: 20px;
 
     /* rating-color */
-    --rating-col:var(--btn-col);    
+    --rating-col:var(--btn-col); 
+
+    /* footer style*/
+    --foter-bgrnd:#0a1530;
 }
 /* ===================== base ==================== */
 body{
@@ -49,6 +52,10 @@ section{
 }
 footer{
     text-align: center;
+    margin-top: 150px;
+    background: var(--foter-bgrnd);
+    color: #fff;
+    padding: 50px;
 }
 ul li{
     list-style: none;
@@ -202,7 +209,25 @@ ul li{
 .rating-point{
     margin-left: 5px;
 }
+.see-more a{
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
+.see-more>a>i{
+    margin-right: 5px;
+}
 /* footer style */
-
-
-https://github.com/Samiur2022/Second-Assignment.git
+.social-icon{
+    width: 300px;
+    margin: auto;
+}
+.social-icon>nav>ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-left: -20px;
+}
+.social-icon>nav>ul>i{
+    margin-right: 20px;
+}
