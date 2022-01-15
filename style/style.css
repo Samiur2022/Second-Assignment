@@ -1,5 +1,5 @@
 /*===================== google-fonts ============== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500,700&display=swap');
 
 /* =================== root ================== */
 :root{
@@ -19,17 +19,49 @@
     
 }
 /* ===================== base ==================== */
+section{
+    justify-content: center;
+}
 
 /* ===================== nav-style ================== */
-nav>ul .nav-right{
+nav>ul{
     display: flex;
-    justify-content:right;
-    text-transform: var(--nav-text);
-}
-nav ul li{
     list-style: none;
-    margin-right: var(--margin-right);
 }
-nav>ul>li a{
-    text-decoration: none;
+nav>ul>.nav-right{
+    display: flex;
+    text-transform: var(--nav-text);
+    margin-left: 55%;
+}
+nav>ul>.nav-right>li{
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none; 
+}
+nav>ul>#logo{
+    font-weight: 700;
+    font-family: var(--main-title);
+    color: var(--h1-col);
+}
+/* ===================== banner ================== */
+.banner{
+    display: flex;
+}
+.half-width{
+    width: 50%;
+}
+.half-width h1{
+    font-family: var(--main-title);
+    font-weight: 700;
+}
+.half-width img{
+    width: 50%;
+}
+.camera{
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    background-size: contain;
 }
