@@ -37,9 +37,9 @@
 /* ===================== base ==================== */
 section{
     justify-content: center;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-top: 150px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 /* ===================== nav-style ================== */
@@ -146,6 +146,22 @@ nav>ul>#logo{
 }
 
 /* ======= product-title,rating,description ===============*/
+.product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+}
+.inner-item{
+    overflow: hidden;
+    padding: ;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+}
 .inner-item h3{
     font-family: var(--h3-title);
     font-size: var(--h3-size);
@@ -157,6 +173,9 @@ nav>ul>#logo{
     font-size: var(--h4-size);
     color: var(--h4-col);
     margin: 0;
+}
+.inner-item p{
+    font-family: var(--para-text);
 }
 .inner-item>nav>ul{
     left: 0;
