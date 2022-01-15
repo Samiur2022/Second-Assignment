@@ -32,33 +32,45 @@
     /* nav */
     --nav-text: capitalize;
     --margin-right: 20px;
-    
+
+    /* rating-color */
+    --rating-col:var(--btn-col);    
 }
 /* ===================== base ==================== */
+body{
+    margin: 0;
+    padding: 0;
+}
 section{
     justify-content: center;
     margin-right: 5%;
     margin-top: 150px;
     margin-left: 5%;
 }
+footer{
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
 
 /* ===================== nav-style ================== */
-nav>ul{
+.menu>ul{
     display: flex;
     list-style: none;
 }
-nav>ul>.nav-right{
+.menu>ul>.nav-right{
     display: flex;
     text-transform: var(--nav-text);
     margin-left: 55%;
 }
-nav>ul>.nav-right>li{
+.menu>ul>.nav-right>li{
     margin-right: 20px;
 }
-nav li a{
+.menu li a{
     text-decoration: none; 
 }
-nav>ul>#logo{
+.menu>ul>#logo{
     font-weight: 700;
     font-family: var(--main-title);
     color: var(--h1-col);
@@ -150,33 +162,47 @@ nav>ul>#logo{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 20px;
-    row-gap: 50px;
+    row-gap: 100px;
 }
 .inner-item{
-    overflow: hidden;
-    padding: ;
-    background: rgba( 255, 255, 255, 0.25 );
+    width: 300px;
+    padding: 30px ;
+    background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .inner-item h3{
     font-family: var(--h3-title);
     font-size: var(--h3-size);
     color: var(--h3-col);
-    margin: 0;
+    margin-top: 5px;
 }
 .inner-item h4{
     font-family: var(--h4-title);
     font-size: var(--h4-size);
     color: var(--h4-col);
-    margin: 0;
+    margin-top: -14px;
 }
 .inner-item p{
     font-family: var(--para-text);
 }
-.inner-item>nav>ul{
-    left: 0;
+/* ========= ratings-style ================ */
+.ratings>.menu-item>ul{
+    display: flex;
 }
+.ratings>.menu-item>ul{
+    list-style: none;
+    margin-top: -20px;
+    margin-left: -43px;
+    color: var(--rating-col);
+}
+.rating-point{
+    margin-left: 5px;
+}
+/* footer style */
+
+
+https://github.com/Samiur2022/Second-Assignment.git
